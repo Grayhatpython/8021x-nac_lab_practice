@@ -156,6 +156,7 @@
 - [x] `syslog.SystemEvents`에서 DHCP 관련 로그 조회/필터링 검증 (`Message LIKE 'DHCPACK on%'`)
 - [x] `radius` DB에 `dhcp_log` 테이블 생성 후, SystemEvents 로그를 파싱하여 저장(정규화) 완료
 - [x] 적재 결과 검증: `radius.dhcp_log`에 최신 레코드가 누적되는지 확인
-- [ ] 적재된 이벤트 중 `DHCPACK on%` 메시지를 자동 식별·파싱하여 `radius.dhcp_log` 테이블에 정규화 형태로 지속 저장(자동화)
-
+- [x] 적재된 이벤트 중 `DHCPACK on%` 메시지를 자동 식별·파싱하여 `radius.dhcp_log` 테이블에 정규화 형태로 지속 저장(자동화)
+- [ ] 적재된 정보가 있는 radius DB를 이용한 주소 관리
+  
 ---
